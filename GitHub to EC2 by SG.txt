@@ -1,0 +1,24 @@
+#!/bin/bash
+apt-get update
+apt-get install -y nginx
+systemctl start nginx
+systemctl enable nginx
+apt-get install -y git
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+apt-get install -y nodejs
+
+
+after opening the Terminal, we can type all our required commands that 
+we used to type in a similar terminal by connecting to our remote server 
+through our Bitvise SSH client software in our previous assignments.
+
+• git clone your GitHub Repository URL 
+• your Username of GitHub will be asked.
+• your account Token as your Password will be asked.
+• cd YourRepositoryname
+• npm install
+• node index.js
+
+copy and paste the Public IPv4 address of your EC2 instance in another browser.
+Now append the port no. 4000 (for our case) to the IP address in the browser 
+with a “:” sign.

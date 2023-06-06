@@ -1,0 +1,33 @@
+Go to the code section and keep it open. Now minimize your browser. Now create a folder anywhere in your computer. 
+Give it a name. Now Right Click on it and select Git Bash here. It will open the Git Bash Terminal.	
+
+	git init
+	git clone https://github.com/sudip7407/New-Repo1.git
+	ls -A 
+	rm -r .git
+	cd New-Repo1 
+
+	rm -r .git
+	rm -r .gitignore 
+	ls -A
+	cd ..
+
+Now close the terminal and open the folder in which you just cloned the project. 
+Single Click on the New-Repo1 file and right click and just like explained above again select Git bash here option. 
+
+Again, a Git bash terminal will open. Again, type the following commands but now we will now upload this cloned project to our created repository on our GitHub: 
+
+	git init 
+	ls -A 
+	git status 
+	git config --global user.email “Your email here” 
+	git config --global user.name “Your GitHub account username here” 
+	git config user.name 
+	git config user.email 
+	git add .
+	git status
+
+	git commit -m “type a message here” 
+	git remote add origin ‘address of your repository ’
+	git push -u origin master 
+
